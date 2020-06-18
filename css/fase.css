@@ -1,0 +1,415 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../css/font/Roboto-Regular.ttf);
+}
+
+html{
+    width: 100%;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: 100%;
+    margin: 0px;
+    border: none;
+    width: 100%;
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.nivel1 {
+    background-color: #1976D2;
+}
+
+.n1:focus{
+    border-bottom: 3px solid #1976D2;
+    color:#1976D2;
+}
+
+.nn1{
+    color:#1976D2; 
+}
+
+.nivel2 {
+    background-color: #26e033;
+
+}
+
+.n2:focus{
+    border-bottom: 3px solid #26e033;
+    color:#26e033;
+}
+
+.nn2{
+    color:#26e033; 
+}
+
+.nivel3{
+    background-color: #af1be0;
+}
+
+.n3:focus{
+    border-bottom: 3px solid #af1be0;
+    color: #af1be0;
+}
+
+.nn3{
+    color:#af1be0; 
+}
+
+.nivel4 {
+    background-color: #1be0d3;
+}
+
+.n4:focus{
+    border-bottom: 3px solid #1be0d3;
+    color:#1be0d3
+}
+
+.nn4{
+    color:#1be0d3; 
+}
+
+.nivel5 {
+    background-color: #26d17e;
+}
+
+.n5:focus{
+    border-bottom: 3px solid #26d17e;
+    color:#26d17e
+}
+
+.nn5{
+    color:#26d17e; 
+}
+
+.nivel6 {
+    background-color: #e01b1b;
+}
+
+.n6:focus{
+    border-bottom: 3px solid #e01b1b;
+    color: #e01b1b;
+}
+
+.nn6{
+    color:#e01b1b; 
+}
+
+.nivel7 {
+    background-color: #e0671b;
+    width: 100%;
+}
+
+.n7:focus{
+    border-bottom: 3px solid #e0671b;
+    color:#e0671b;
+}
+
+.nn7{
+    color:#e0671b; 
+}
+
+.barraSup {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.nick{
+    display: flex;
+    flex-direction: row;
+    height: 3%;
+}
+
+.nick img{
+    justify-content: center;
+    width: 15%;
+    height: 0.35%;
+}
+
+.link{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    height: 3%;
+    padding-left: 2%;
+    justify-content: flex-start;
+}
+
+a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.centro{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    font-size: 1.6em;
+}
+
+.erros {
+    display: flex;
+    flex-direction: row;
+}
+.boneco{
+
+    width: 25%;
+}
+
+.boneco img{
+    height: 80%;
+    width: 80%;
+}
+
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.palavra{
+    height: 500px;
+    width: 75%;
+}
+
+.dica{
+    width: 100%;
+    height: auto;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+}
+
+.pal{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.letras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.chute{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color:#FFFFFF;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 0;
+}
+
+.pont{
+    display: flex;
+    flex-direction: row;
+}
+
+.nivel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9375em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input['value']{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9375em;
+    font-weight: bold; 
+}
+
+.teclado{
+    display: none;
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.modal{
+    font-family: Roboto;
+    font-size: 1.3em;
+    background-color: #FFFFFF;
+    width: 60%;
+    min-width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.modal #titulo{
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+@keyframes move{
+    from{
+        opacity: 1;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: move .3s;
+}
+
+.conteudoModal{
+    margin: 3%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fechar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 3%;
+}
+
+
+.modalAjuda {
+    background-color: #FFFFFF;
+    width: 80%;
+    /*min-width: 200px;*/
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[type="button"] {
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    border-radius: 3px 3px;
+    /*    color: #1976D2;*/
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+}
+
+@media(max-width:855px){
+    .centro{
+        flex-direction: column;
+    }
+    .chuteLetra {
+        display: none;
+    }
+
+    .nick{
+        padding: 0;
+    }
+
+    .boneco {
+        padding-top: 2%;
+        display: flex;
+        width: 100%;
+        height: 20%;
+        flex-direction: column-reverse;
+    }
+    .boneco img{
+        height: 50%;
+        width: 50%;
+    }
+    .palavra {
+        height: 10%;
+        width: 100%;
+    }
+    .dica{
+        justify-content: center;
+    }
+    .chute {
+        margin-bottom: 3%;
+    }
+    .letras {
+        font-size: 1.3em;
+    }
+    .teclado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+    .teclas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .linha{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 33%;
+    }
+    .button{
+        width: 8%
+    }
+
+    #btajuda {
+        display: none;
+    }
+}

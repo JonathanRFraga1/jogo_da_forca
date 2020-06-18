@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../css/font/Roboto-Regular.ttf);
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: 100%;
+    margin: 0px;
+    border: none;
+    height: 100%;
+}
+
+.principal{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+
+.ajuste{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    widows: 50%;
+    margin: 8px;
+}
+
+.group{ 
+    position:relative; 
+    margin-bottom:45px; 
+}
+
+input{
+    font-size:1.3em;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #00838f;
+    background: transparent;
+}
+input:focus{
+    outline:none;
+}
+
+label 				 {
+    color:#00838f; 
+    font-size:1.2em;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#00838f;
+}
+
+.bar{
+    position:relative;
+    display:block;
+    width:100%; 
+}
+
+.bar:before, .bar:after{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#00838f; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%; 
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: #00838f;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from { background:#00838f; }
+    to 	{ width:0; background:transparent; }
+}
+
+
+.principal{
+    background-color:#00838f;
+}
+
+.ajuste {
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color:#212121;
+}
+
+a:visited{
+    color:#212121;
+}
+
+a:hover{
+    color:#212121;
+    text-decoration: underline;
+}
+
+
+@media(max-width:640px){
+
+    .ajuste {
+        
+        height: 80%;
+        width: 80%;
+       
+    }
+
+    a{
+        text-decoration: underline;
+    }
+
+}
+
+@media(max-width:390px){
+
+    .ajuste {
+        
+        height: 80%;
+        width: 90%;
+       
+    }
+    
+    input{
+        width: 80%;
+        font-size: 1em;
+    }
+
+
+
+}
+
+
