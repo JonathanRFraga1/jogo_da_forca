@@ -63,7 +63,7 @@ class ConfigController {
     }
     
     public function carregar(){
-        $classe = "\\Sts\\Controllers\\".$this->UrlController;
+        $classe = "\\App\\Controllers\\".$this->UrlController;
         $classeCarregar = new $classe;
         $classeCarregar->index();
     }
