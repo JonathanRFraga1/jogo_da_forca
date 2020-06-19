@@ -23,7 +23,7 @@ if(isset($_SESSION['nickname'])){ //verifica se já foi efetuado o login
 ?>
 
 
-<html>
+<html lang="pt-br">
 
     <head>
         <meta charset="utf-8">
